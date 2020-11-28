@@ -1,0 +1,59 @@
+/**
+ * Reboot
+ * ========================================================
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fff;
+  color: #444;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+b,
+strong {
+  font-weight: 900;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace, x;
+}
+pre {
+  overflow-x: auto;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+img {
+  vertical-align: middle;
+}
