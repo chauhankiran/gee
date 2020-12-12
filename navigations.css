@@ -1,0 +1,131 @@
+/**
+ * Navigations
+ * ========================================================
+ */
+.nav {
+  display: flex;
+
+  /** 
+   * Following items are hackable. 
+   */
+  min-height: 3.125rem;
+  background-color: #f2f2f2;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.nav-left {
+  justify-content: flex-start;
+}
+.nav-center {
+  justify-content: center;
+}
+.nav-right {
+  justify-content: flex-end;
+}
+
+.nav-item {
+  /** 
+   * Following items are hackable. 
+   */
+  padding: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.nav-active {
+  /** 
+   * Following items are hackable. 
+   */
+  color: rgba(0, 0, 0, 0.9) !important; /* Added !important. Because, when you hover item, the active should not have that hover effect. Only other items should have. */
+  text-decoration: underline;
+}
+.nav-item:hover {
+  /** 
+   * Following items are hackable. 
+   */
+  color: rgba(0, 0, 0, 0.7);
+}
+.nav-brand {
+  /** 
+   * Following items are hackable. 
+   */
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/**
+ * Haven't think about yet on what to do with mobile screen.
+ * So for now, all are stacked vertically.
+ */
+@media screen and (max-width: 767px) {
+  .nav,
+  .nav-left,
+  .nav-center, 
+  .nav-right,
+  .nav-item {
+    display: block;
+  }
+}
+
+
+/**
+ * Usages
+ * ========================================================
+
+<!--Basic Nav -->
+<nav class="nav">
+  <div class="nav-left">
+    <a href="#" class="nav-item nav-brand">Brand Name</a>
+  </div>
+</nav>
+
+
+<!--Basic Nav 2.-->
+<nav class="nav">
+  <div class="nav-left">
+    <a href="#" class="nav-item nav-brand">Brand Name</a>
+    <a href="#" class="nav-item nav-brand">About</a>
+    <a href="#" class="nav-item nav-brand">Contact</a>
+  </div>
+</nav>
+
+
+<!--Left and Center aligned items within Nav.-->
+<!--
+  If you're using left and right items,
+  you need to add .nav-right to centered the .nav-center
+  items.
+-->
+<nav class="nav">
+  <div class="nav-left">
+    <a href="#" class="nav-item nav-brand">About</a>
+    <a href="#" class="nav-item nav-brand">Contact</a>
+  </div>
+  <div class="nav-center"
+    <a href="#" class="nav-item nav-brand">Brand Name</a>
+  </div>
+  <div class="nav-right"></div>
+</nav>
+
+
+<!--Nav with left, right, and center items.-->
+<nav class="nav">
+  <div class="nav-left">
+    <a href="#" class="nav-item nav-brand">About</a>
+    <a href="#" class="nav-item nav-brand">Contact</a>
+  </div>
+  <div class="nav-center"
+    <a href="#" class="nav-item nav-brand">Brand Name</a>
+  </div>
+  <div class="nav-right">
+    <a href="#" class="nav-item nav-brand">Facebook</a>
+    <a href="#" class="nav-item nav-brand">Twitter</a>
+  </div>
+</nav>
+
+*/
