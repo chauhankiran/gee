@@ -11,3 +11,4 @@ Currently supported components (in-basic forms) are
 3. Grid
 4. Buttons
 5. Navigations
+6. Lists
