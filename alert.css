@@ -1,0 +1,41 @@
+/**
+ * Buttons
+ * ========================================================
+ */
+.alert {
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+
+  /*
+   * Following item is hackable.
+   */
+  background-color: #e2e8f0;
+}
+
+.alert .close {
+  background: transparent;
+  border: 0;
+  font-size: 1.4rem;
+  line-height: 1.3rem;
+  float: right;
+
+  /*
+   * Following item is hackable.
+   */
+  color: #444;
+}
+
+/*
+
+<div class="alert">
+  This is an alert message which you should read.
+</div>
+
+<div class="alert">
+  <button type="button" class="close">&times;</button>
+  This is an alert message which you should read. You can close it, if you like.
+</div>
+
+*/
