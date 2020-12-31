@@ -1,0 +1,263 @@
+/**
+ * Tables
+ * ========================================================
+ */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: .5rem;
+  text-align: left;
+
+  /*
+   * Following item is hackable.
+   */
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  /*
+   * Following item is hackable.
+   */
+  border-bottom: 1px solid #aaa;
+}
+
+/*
+ * Design variants
+ * ========================================================
+ */
+.table-striped > tbody > tr:nth-of-type(odd) {
+  /*
+   * Following item is hackable.
+   */
+  background-color: #ccc;
+}
+.table-hover > tbody > tr:hover {
+  /*
+   * Following item is hackable.
+   */
+  background-color: #ccc;
+}
+.table-bordered tr {
+  /*
+   * Following item is hackable.
+   */
+  border: 1px solid #ddd;
+}
+.table-border-box th,
+.table-border-box td {
+  /*
+   * Following item is hackable.
+   */
+  border: 1px solid #ddd;
+}
+.table-borderless th,
+.table-borderless td {
+  border: 0;
+}
+
+
+
+/*
+
+<!-- Table with all around border -->
+<table class="table table-border-box">
+  <thead>
+  <tr>
+    <th>Sr No</th>
+    <th>Name</th>
+    <th>Content</th>
+    <th>Remark</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>John Doe</td>
+      <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+      <td>Positive</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Jane Doe</td>
+      <td>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      <td>Need to review with team</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Jane Smith</td>
+      <td>Excepteur sint occaecat cupidatat non proident.</td>
+      <td>Confirmed</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!--Table without border -->
+<table class="table table-borderless">
+  <thead>
+  <tr>
+    <th>Sr No</th>
+    <th>Name</th>
+    <th>Content</th>
+    <th>Remark</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>John Doe</td>
+      <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+      <td>Positive</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Jane Doe</td>
+      <td>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      <td>Need to review with team</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Jane Smith</td>
+      <td>Excepteur sint occaecat cupidatat non proident.</td>
+      <td>Confirmed</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- Table with normal border -->
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th>Sr No</th>
+    <th>Name</th>
+    <th>Content</th>
+    <th>Remark</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>John Doe</td>
+      <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+      <td>Positive</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Jane Doe</td>
+      <td>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      <td>Need to review with team</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Jane Smith</td>
+      <td>Excepteur sint occaecat cupidatat non proident.</td>
+      <td>Confirmed</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- Table with hover effect -->
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th>Sr No</th>
+    <th>Name</th>
+    <th>Content</th>
+    <th>Remark</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>John Doe</td>
+      <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+      <td>Positive</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Jane Doe</td>
+      <td>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      <td>Need to review with team</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Jane Smith</td>
+      <td>Excepteur sint occaecat cupidatat non proident.</td>
+      <td>Confirmed</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- Table with odd-even color -->
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Sr No</th>
+    <th>Name</th>
+    <th>Content</th>
+    <th>Remark</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>John Doe</td>
+      <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+      <td>Positive</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Jane Doe</td>
+      <td>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      <td>Need to review with team</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Jane Smith</td>
+      <td>Excepteur sint occaecat cupidatat non proident.</td>
+      <td>Confirmed</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- Normal table -->
+<table class="table">
+  <thead>
+  <tr>
+    <th>Sr No</th>
+    <th>Name</th>
+    <th>Content</th>
+    <th>Remark</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>John Doe</td>
+      <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+      <td>Positive</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Jane Doe</td>
+      <td>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      <td>Need to review with team</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Jane Smith</td>
+      <td>Excepteur sint occaecat cupidatat non proident.</td>
+      <td>Confirmed</td>
+    </tr>
+  </tbody>
+</table>
+
+ */
