@@ -1,0 +1,115 @@
+/**
+ * Forms
+ * ========================================================
+ */
+label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  /*
+   * Following item is hackable.
+   */
+  display: block;
+
+  /*
+   * Following items are hackable.
+   */
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  min-height: 5rem;
+}
+
+input:hover,
+input:focus,
+input:active {
+  /*
+   * Following item is hackable.
+   */
+  border: 1px solid #222;
+}
+textarea:hover,
+textarea:focus,
+textarea:active {
+  /*
+   * Following item is hackable.
+   */
+  border: 1px solid #222;
+}
+select:hover,
+select:active,
+select:focus {
+  /*
+   * Following item is hackable.
+   */
+  border: 1px solid #222;
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+  /*
+   * Following item is hackable.
+   */
+  border: 1px solid #ddd;
+  opacity: .4;
+}
+
+.from-group {
+  /*
+   * Following item is hackable.
+   */
+  margin-bottom: 1rem;
+}
+
+/*
+
+<div class="from-group">
+  <label>First Name</label>
+  <input type="text" placeholder="First Name">
+</div>
+
+<div class="from-group">
+  <label>First Name</label>
+  <input type="text" placeholder="First Name" disabled>
+</div>
+
+
+<div class="from-group">
+  <label>Comment</label>
+  <textarea placeholder="Comment"></textarea>
+</div>
+
+<div class="from-group">
+  <label>Comment</label>
+  <textarea placeholder="Comment" disabled></textarea>
+</div>
+
+
+<div class="from-group">
+  <label>Please select</label>
+  <select>
+    <option>Option 1</option>
+    <option>Option 2</option>
+  </select>
+</div>
+
+<div class="from-group">
+  <label>Please select</label>
+  <select disabled>
+    <option>Option 1</option>
+    <option>Option 2</option>
+  </select>
+</div>
+
+*/
