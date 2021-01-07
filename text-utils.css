@@ -1,0 +1,77 @@
+/**
+ * Text Utilities
+ * ========================================================
+ */
+
+/*
+ * Text transform utilities
+ */
+.text-up-case {
+  text-transform: uppercase;
+}
+.text-lower-case {
+  text-transform: lowercase;
+}
+.text-caps-case {
+  text-transform: capitalize;
+}
+.text-normal-case {
+  text-transform: none;
+}
+
+/*
+ * Text alignment utilities
+ */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+/*
+ * Text size utilities
+ */
+.text-sm {
+  font-size: 0.875rem;
+}
+.text-base {
+  font-size: 1rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+}
+
+/*
+ * Text decoration utilities
+ */
+.text-underline {
+  text-decoration: underline;
+}
+.text-line-through {
+  text-decoration: line-through;
+}
+.text-no-underline {
+  text-decoration: none;
+}
+
+/*
+ * Text overflow utilities
+ */
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+.text-clip {
+  text-overflow: clip;
+}
