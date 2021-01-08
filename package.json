@@ -1,0 +1,23 @@
+{
+  "name": "gee",
+  "version": "0.0.1",
+  "description": "A component-first small style framework with simplicity and easiness.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss gee.css --no-map --use postcss-import -o gee.development.css",
+    "prod": "postcss gee.css --no-map --use postcss-import postcss-clean -o gee.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chauhankiran/gee.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Kiran Chauhan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chauhankiran/gee/issues"
+  },
+  "homepage": "https://github.com/chauhankiran/gee#readme"
+}
