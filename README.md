@@ -24,11 +24,17 @@ Gee is written in CSS. So, theoretically, it does not require any build process.
 The currently build process is simple and somewhat a hack. You might not like it. But, I'm improving it!
 
 1. Install `postcss-cli` globally.
+    ```
     $ npm i -g postcss-cli
+    ```
 2. Install `postcss-import` globally.
+    ```
     $ npm i -g postcss-import
+    ```
 3. Install `postcss-clean` globally.
+    ```
     $ npm i -g postcss-clean
+    ```
 
 The requires packages are installed. To build development version of Gee, use following command.
 
