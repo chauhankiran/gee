@@ -4,8 +4,8 @@
   "description": "A component-first small style framework with simplicity and easiness.",
   "main": "index.js",
   "scripts": {
-    "dev": "postcss gee.css --no-map --use postcss-import -o gee.development.css",
-    "prod": "postcss gee.css --no-map --use postcss-import postcss-clean -o gee.min.css"
+    "dev": "postcss src/gee.css --no-map --use postcss-import -o dist/gee.css",
+    "prod": "postcss src/gee.css --no-map --use postcss-import postcss-clean -o dist/gee.min.css"
   },
   "repository": {
     "type": "git",
