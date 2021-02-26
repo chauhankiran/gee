@@ -16,6 +16,7 @@ Currently supported components (in-basic forms) are
 8. Tables
 9. Forms
 10. Text Utilities
+11. Space Utilities
 
 ## Build
 
@@ -24,17 +25,17 @@ Gee is written in CSS. So, theoretically, it does not require any build process.
 The currently build process is simple and somewhat a hack. You might not like it. But, I'm improving it!
 
 1. Install `postcss-cli` globally.
-    ```
-    $ npm i -g postcss-cli
-    ```
+   ```
+   $ npm i -g postcss-cli
+   ```
 2. Install `postcss-import` globally.
-    ```
-    $ npm i -g postcss-import
-    ```
+   ```
+   $ npm i -g postcss-import
+   ```
 3. Install `postcss-clean` globally.
-    ```
-    $ npm i -g postcss-clean
-    ```
+   ```
+   $ npm i -g postcss-clean
+   ```
 
 The requires packages are installed. To build development version of Gee, use following command.
 
@@ -42,7 +43,7 @@ The requires packages are installed. To build development version of Gee, use fo
 $ npm run dev
 ```
 
-This will create `gee.development.css` file in root directory.
+This will create `gee.css` file in root directory.
 
 To build minified or production version of Gee, use following command.
 
@@ -51,7 +52,6 @@ $ npm run prod
 ```
 
 This will create `gee.min.css` file in root directory.
-
 
 ## License
 
