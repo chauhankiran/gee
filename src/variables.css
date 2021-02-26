@@ -1,0 +1,16 @@
+/**
+ * Variables.
+ * ========================================================
+ */
+
+:root {
+  --nav-height: 3.125rem;
+  --nav-bg-color: #f2f2f2;
+  --nav-item-padding: 1rem;
+  --nav-item-color: rgba(0, 0, 0, 0.5);
+  --nav-brand-color: rgba(0, 0, 0, 0.9);
+  --nav-brand-size: 1.2rem;
+  --nav-active-item-color: rgba(0, 0, 0, 0.9) !important;
+  --nav-hover-item-color: rgba(0, 0, 0, 0.7);
+  --nav-hover-text-decoration: underline;
+}

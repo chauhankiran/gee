@@ -1,5 +1,20 @@
 /*! Gee v0.0.1 | MIT License | https://github.com/chauhankiran/gee */
 /**
+ * Variables.
+ * ========================================================
+ */
+:root {
+  --nav-height: 3.125rem;
+  --nav-bg-color: #f2f2f2;
+  --nav-item-padding: 1rem;
+  --nav-item-color: rgba(0, 0, 0, 0.5);
+  --nav-brand-color: rgba(0, 0, 0, 0.9);
+  --nav-brand-size: 1.2rem;
+  --nav-active-item-color: rgba(0, 0, 0, 0.9) !important;
+  --nav-hover-item-color: rgba(0, 0, 0, 0.7);
+  --nav-hover-text-decoration: underline;
+}
+/**
  * Reboot
  * ========================================================
  */
@@ -68,7 +83,7 @@ h4,
 h6 {
   font-weight: 700;
   margin-top: 0.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 h1 {
   font-size: 2.5rem;
@@ -115,7 +130,7 @@ a:hover {
 }
 .table th,
 .table td {
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: left;
 
   /*
@@ -387,7 +402,7 @@ a:hover {
   margin-left: -1rem;
 }
 .col,
-[class^='col-'] {
+[class^="col-"] {
   position: relative;
   width: 100%;
   padding-left: 1rem;
@@ -434,7 +449,7 @@ a:hover {
 }
 @media screen and (max-width: 42rem) {
   .col,
-  [class^='col-'] {
+  [class^="col-"] {
     flex-grow: 0;
     flex-basis: 100%;
   }
@@ -445,7 +460,7 @@ a:hover {
  */
 .list-group {
   list-style-type: none;
-  margin: .5rem 0 .5rem 0;
+  margin: 0.5rem 0 0.5rem 0;
   padding: 0;
 
   /**
@@ -454,7 +469,7 @@ a:hover {
   border: 1px solid #e2e8f0;
 }
 .list-group-item {
-  padding: .75rem;
+  padding: 0.75rem;
   /**
    * Following item is hackable.
    */
@@ -476,7 +491,7 @@ a:hover {
   /**
    * Following item is hackable.
    */
-  opacity: .7;
+  opacity: 0.7;
 }
 .list-group-item.active {
   /**
@@ -488,7 +503,7 @@ a:hover {
 .list-group-item h3,
 .list-group-item h4 {
   margin: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .list-group-item p {
   margin: 0;
@@ -497,15 +512,15 @@ a:hover {
  * Optional supportive design - make list rounded using .rounded class.
  */
 .list-group.rounded {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 .list-group.rounded li:first-child {
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 .list-group.rounded li:last-child {
-  border-bottom-left-radius: .5rem;
-  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 /*
 
@@ -544,11 +559,9 @@ a:hover {
 .nav {
   display: flex;
 
-  /** 
-   * Following items are hackable. 
-   */
-  min-height: 3.125rem;
-  background-color: #f2f2f2;
+  /* Hackable. */
+  min-height: var(--nav-height);
+  background-color: var(--nav-bg-color);
 }
 .nav-left,
 .nav-center,
@@ -567,31 +580,25 @@ a:hover {
   justify-content: flex-end;
 }
 .nav-item {
-  /** 
-   * Following items are hackable. 
-   */
-  padding: 1rem;
-  color: rgba(0, 0, 0, 0.5);
+  /* Hackable. */
+  padding: var(--nav-item-padding);
+  color: var(--nav-item-color);
 }
 .nav-active {
-  /** 
-   * Following items are hackable. 
-   */
-  color: rgba(0, 0, 0, 0.9) !important; /* Added !important. Because, when you hover item, the active should not have that hover effect. Only other items should have. */
-  text-decoration: underline;
+  /* Hackable. */
+  color: var(
+    --nav-active-item-color
+  ); /* Added !important. Because, when you hover item, the active should not have that hover effect. Only other items should have. */
+  text-decoration: var(--nav-hover-text-decoration);
 }
 .nav-item:hover {
-  /** 
-   * Following items are hackable. 
-   */
-  color: rgba(0, 0, 0, 0.7);
+  /* Hackable. */
+  color: var(--nav-hover-item-color);
 }
 .nav-brand {
-  /** 
-   * Following items are hackable. 
-   */
-  font-size: 1.2rem;
-  color: rgba(0, 0, 0, 0.9);
+  /* Hackable. */
+  font-size: var(--nav-brand-size);
+  color: var(--nav-brand-color);
 }
 /**
  * Haven't think about yet on what to do with mobile screen.
@@ -600,7 +607,7 @@ a:hover {
 @media screen and (max-width: 767px) {
   .nav,
   .nav-left,
-  .nav-center, 
+  .nav-center,
   .nav-right,
   .nav-item {
     display: block;
@@ -670,7 +677,7 @@ a:hover {
   padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 
   /*
    * Following item is hackable.
@@ -711,17 +718,17 @@ a:hover {
   cursor: pointer;
   text-decoration: none !important;
   outline: 0;
-  padding: .5rem .8rem;
+  padding: 0.5rem 0.8rem;
   position: relative;
   text-align: center;
   display: inline-block;
-  margin-bottom: .5rem;
-  margin-top: .5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   transition: box-shadow 0.3s ease-in-out;
 }
 .btn.disabled {
   cursor: not-allowed;
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 /**
@@ -745,7 +752,7 @@ a:hover {
  */
 label {
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 input,
 textarea,
@@ -799,7 +806,7 @@ select:disabled {
    * Following item is hackable.
    */
   border: 1px solid #ddd;
-  opacity: .4;
+  opacity: 0.4;
 }
 .from-group {
   /*

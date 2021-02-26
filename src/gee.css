@@ -1,4 +1,6 @@
 /*! Gee v0.0.1 | MIT License | https://github.com/chauhankiran/gee */
+@import "variables.css";
+
 @import "reboot.css";
 
 @import "typography.css";

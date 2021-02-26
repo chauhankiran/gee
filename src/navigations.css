@@ -5,11 +5,9 @@
 .nav {
   display: flex;
 
-  /** 
-   * Following items are hackable. 
-   */
-  min-height: 3.125rem;
-  background-color: #f2f2f2;
+  /* Hackable. */
+  min-height: var(--nav-height);
+  background-color: var(--nav-bg-color);
 }
 
 .nav-left,
@@ -31,31 +29,25 @@
 }
 
 .nav-item {
-  /** 
-   * Following items are hackable. 
-   */
-  padding: 1rem;
-  color: rgba(0, 0, 0, 0.5);
+  /* Hackable. */
+  padding: var(--nav-item-padding);
+  color: var(--nav-item-color);
 }
 .nav-active {
-  /** 
-   * Following items are hackable. 
-   */
-  color: rgba(0, 0, 0, 0.9) !important; /* Added !important. Because, when you hover item, the active should not have that hover effect. Only other items should have. */
-  text-decoration: underline;
+  /* Hackable. */
+  color: var(
+    --nav-active-item-color
+  ); /* Added !important. Because, when you hover item, the active should not have that hover effect. Only other items should have. */
+  text-decoration: var(--nav-hover-text-decoration);
 }
 .nav-item:hover {
-  /** 
-   * Following items are hackable. 
-   */
-  color: rgba(0, 0, 0, 0.7);
+  /* Hackable. */
+  color: var(--nav-hover-item-color);
 }
 .nav-brand {
-  /** 
-   * Following items are hackable. 
-   */
-  font-size: 1.2rem;
-  color: rgba(0, 0, 0, 0.9);
+  /* Hackable. */
+  font-size: var(--nav-brand-size);
+  color: var(--nav-brand-color);
 }
 
 /**
@@ -65,13 +57,12 @@
 @media screen and (max-width: 767px) {
   .nav,
   .nav-left,
-  .nav-center, 
+  .nav-center,
   .nav-right,
   .nav-item {
     display: block;
   }
 }
-
 
 /**
  * Usages
