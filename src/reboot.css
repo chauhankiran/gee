@@ -19,8 +19,8 @@ html {
 body {
   background-color: #fff;
   color: #444;
-  font-family: sans-serif;
-  font-size: 1rem;
+  font-family: var(--font);
+  font-size: var(--font-size);
   line-height: 1.5;
 }
 a:hover,
@@ -35,7 +35,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace, x;
+  font-family: var(--mono);
 }
 pre {
   overflow-x: auto;

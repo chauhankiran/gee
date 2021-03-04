@@ -38,11 +38,12 @@
   color: var(
     --nav-active-item-color
   ); /* Added !important. Because, when you hover item, the active should not have that hover effect. Only other items should have. */
-  text-decoration: var(--nav-hover-text-decoration);
+  text-decoration: var(--nav-active-text-decoration);
 }
 .nav-item:hover {
   /* Hackable. */
   color: var(--nav-hover-item-color);
+  text-decoration: var(--nav-hover-text-decoration);
 }
 .nav-brand {
   /* Hackable. */
@@ -63,60 +64,3 @@
     display: block;
   }
 }
-
-/**
- * Usages
- * ========================================================
-
-<!--Basic Nav -->
-<nav class="nav">
-  <div class="nav-left">
-    <a href="#" class="nav-item nav-brand">Brand Name</a>
-  </div>
-</nav>
-
-
-<!--Basic Nav 2.-->
-<nav class="nav">
-  <div class="nav-left">
-    <a href="#" class="nav-item nav-brand">Brand Name</a>
-    <a href="#" class="nav-item nav-brand">About</a>
-    <a href="#" class="nav-item nav-brand">Contact</a>
-  </div>
-</nav>
-
-
-<!--Left and Center aligned items within Nav.-->
-<!--
-  If you're using left and right items,
-  you need to add .nav-right to centered the .nav-center
-  items.
--->
-<nav class="nav">
-  <div class="nav-left">
-    <a href="#" class="nav-item nav-brand">About</a>
-    <a href="#" class="nav-item nav-brand">Contact</a>
-  </div>
-  <div class="nav-center"
-    <a href="#" class="nav-item nav-brand">Brand Name</a>
-  </div>
-  <div class="nav-right"></div>
-</nav>
-
-
-<!--Nav with left, right, and center items.-->
-<nav class="nav">
-  <div class="nav-left">
-    <a href="#" class="nav-item nav-brand">About</a>
-    <a href="#" class="nav-item nav-brand">Contact</a>
-  </div>
-  <div class="nav-center"
-    <a href="#" class="nav-item nav-brand">Brand Name</a>
-  </div>
-  <div class="nav-right">
-    <a href="#" class="nav-item nav-brand">Facebook</a>
-    <a href="#" class="nav-item nav-brand">Twitter</a>
-  </div>
-</nav>
-
-*/
