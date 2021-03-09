@@ -16,10 +16,14 @@
   --a-text-decoration: none;
   --a-hover-text-decoration: underline;
 
+  --header-weight: 700;
+  --strong-weight: 700;
+
   --nav-height: 3.125rem;
   --nav-bg-color: #f2f2f2;
   --nav-item-padding: 1rem;
   --nav-item-color: rgba(0, 0, 0, 0.5);
+  --nav-item-weight: 400;
   --nav-brand-color: rgba(0, 0, 0, 0.9);
   --nav-brand-size: 1.2rem;
   --nav-active-item-color: rgba(0, 0, 0, 0.9) !important;
@@ -94,7 +98,7 @@ h2,
 h3,
 h4,
 h6 {
-  font-weight: 700;
+  font-weight: var(--header-weight);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -121,6 +125,14 @@ address {
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 1rem;
+}
+b,
+strong {
+  font-weight: var(--strong-weight);
+}
+i,
+em {
+  font-style: italic;
 }
 small {
   font-size: 85%;
@@ -594,6 +606,7 @@ a:hover {
 }
 .nav-item {
   /* Hackable. */
+  font-weight: var(--nav-item-weight);
   padding: var(--nav-item-padding);
   color: var(--nav-item-color);
 }

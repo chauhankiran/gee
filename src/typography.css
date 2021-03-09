@@ -7,7 +7,7 @@ h2,
 h3,
 h4,
 h6 {
-  font-weight: 700;
+  font-weight: var(--header-weight);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -34,6 +34,14 @@ address {
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 1rem;
+}
+b,
+strong {
+  font-weight: var(--strong-weight);
+}
+i,
+em {
+  font-style: italic;
 }
 small {
   font-size: 85%;

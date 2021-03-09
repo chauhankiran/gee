@@ -30,6 +30,7 @@
 
 .nav-item {
   /* Hackable. */
+  font-weight: var(--nav-item-weight);
   padding: var(--nav-item-padding);
   color: var(--nav-item-color);
 }
