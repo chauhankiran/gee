@@ -19,6 +19,9 @@
   --header-weight: 700;
   --strong-weight: 700;
 
+  --alert-bg-color: #e2e8f0;
+  --alert-close-button-color: #444;
+
   --list-border-color: #e2e8f0;
   --list-item-hover-color: #e2e8f0;
   --list-item-active-color: #e2e8f0;
